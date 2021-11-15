@@ -283,7 +283,7 @@ class Voxel2(Button):    #초기 맵 초기화 및 설정 1층 아래 돌 블럭
             scale=0.5
         )
 
-    def input(self, key):    #클릭 했을 때 블럭 설치, 파괴하는 함수
+    def input(self, key):    ##클릭 했을 때 블럭 설치, 파괴하는 함수
         if self.hovered:
             if key == 'right mouse down':
                 Voxel(position=self.position + mouse.normal, texture=blocks[block_id])
