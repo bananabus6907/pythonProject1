@@ -12,6 +12,7 @@ punch = Audio('blocks/assets_punch.wav', autoplay=False) #블럭 부수는 소�
 
 pygame.mixer.init(44100, -16, 2, 512)
 pygame.mixer.set_num_channels(32)
+pygame.mixer.music.set_volume(0.3)
 pygame.mixer.music.load('Minecraft.mp3') #마인크래프트 배경음악 재생
 pygame.mixer.music.play(-1)
 
